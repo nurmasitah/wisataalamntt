@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah NTT - Surga Eksotis Timur Indonesia</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div id="progress-bar"></div>
+
+    <header>
+        <div class="logo">🏝️ JelajahNTT</div>
+        <nav class="nav-menu">
+            <a href="#hero-section" class="nav-link active">Home</a>
+            <a href="#blog-section" class="nav-link">Eksplor Wisata</a>
+            <a href="#about-section" class="nav-link">Tentang Kami</a>
+            <a href="#contact-section" class="nav-link">Kontak</a>
+        </nav>
+        <button class="theme-toggle" id="themeBtn">🌙 Mode Gelap</button>
+    </header>
+
+    <section id="hero-section" class="section hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Selamat Datang di Nusa Tenggara Timur</h1>
+            <p>Jelajahi keajaiban komodo, pesona bukit sabana emas, dan harmoni budaya luhur.</p>
+            <a href="#blog-section" class="cta-btn">Mulai Petualangan</a>
+        </div>
+    </section>
+
+    <section class="travel-slider">
+        <div class="slider-track">
+            <div class="slide"><img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=400" alt="NTT 1"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="NTT 2"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?w=400" alt="NTT 3"></div>
+            <div class="slide"><img src="https://i.pinimg.com/736x/a2/68/27/a268275809c7a86c0c4ae1012f206716.jpg" alt="NTT 4"></div>
+            <div class="slide"><img src="https://i.pinimg.com/1200x/63/4c/d4/634cd45f090ece404a55fabb7707038a.jpg" alt="NTT 5"></div>
+            <div class="slide"><img src="https://i.pinimg.com/1200x/81/be/c9/81bec9a7a1c4b117be8e00537f2877ba.jpg" alt="NTT 6"></div>
+            
+            <div class="slide"><img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=400" alt="NTT 1"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="NTT 2"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?w=400" alt="NTT 3"></div>
+            <div class="slide"><img src="https://i.pinimg.com/736x/a2/68/27/a268275809c7a86c0c4ae1012f206716.jpg" alt="NTT 4"></div>
+            <div class="slide"><img src="https://i.pinimg.com/1200x/63/4c/d4/634cd45f090ece404a55fabb7707038a.jpg" alt="NTT 5"></div>
+            <div class="slide"><img src="https://i.pinimg.com/1200x/81/be/c9/81bec9a7a1c4b117be8e00537f2877ba.jpg" alt="NTT 6"></div>
+        </div>
+    </section>
+
+    <section id="blog-section" class="section blog-section-wrapper">
+        <div class="section-header-title">
+            <h2>Destinasi Keajaiban Alam NTT</h2>
+            <p>Rekomendasi tempat liburan terbaik wajib kunjung sekali seumur hidup</p>
+            
+            <div class="search-container">
+                <input type="text" id="searchBlog" placeholder="Cari surga NTT tersembunyi...">
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">Semua Wisata</button>
+            <button class="filter-btn" data-category="pantai">Pantai & Laut</button>
+            <button class="filter-btn" data-category="budaya">Pegunungan & Budaya</button>
+        </div>
+
+        <main class="blog-container">
+            <div class="blog-card" data-cat="pantai">
+                <div class="img-zoom-container">
+                    <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=800&q=80" alt="Pulau Padar" class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <span class="category-badge">Pantai & Laut</span>
+                    <h3 class="blog-title">Pulau Padar, Labuan Bajo</h3>
+                    <p class="blog-description">Trekking seru mendaki anak tangga perbukitan ikonik untuk memandang panorama epik tiga lekukan teluk eksotis.</p>
+                    <div class="blog-footer">
+                        <button class="like-btn">❤️ <span class="like-count">342</span></button>
+                        <button class="share-btn" onclick="shareLink('Pulau Padar')">🔗 Bagikan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card" data-cat="budaya">
+                <div class="img-zoom-container">
+                    <img src="https://i.pinimg.com/1200x/63/4c/d4/634cd45f090ece404a55fabb7707038a.jpg" alt="Kelimutu" class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <span class="category-badge">Pegunungan & Budaya</span>
+                    <h3 class="blog-title">Kawah Tiga Warna Kelimutu</h3>
+                    <p class="blog-description">Menyaksikan fenomena magis tiga buah danau kawah vulkanik yang terus berubah warna misterius di puncak Ende.</p>
+                    <div class="blog-footer">
+                        <button class="like-btn">❤️ <span class="like-count">215</span></button>
+                        <button class="share-btn" onclick="shareLink('Kelimutu')">🔗 Bagikan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card" data-cat="pantai">
+                <div class="img-zoom-container">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Pink Beach" class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <span class="category-badge">Pantai & Laut</span>
+                    <h3 class="blog-title">Pink Beach Komodo</h3>
+                    <p class="blog-description">Pantai cantik berpasir merah muda magis yang berasal dari serpihan organisme koral laut mikro berwarna merah cerah.</p>
+                    <div class="blog-footer">
+                        <button class="like-btn">❤️ <span class="like-count">512</span></button>
+                        <button class="share-btn" onclick="shareLink('Pink Beach')">🔗 Bagikan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card" data-cat="budaya">
+                <div class="img-zoom-container">
+                    <img src="https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&w=800&q=80" alt="Wae Rebo" class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <span class="category-badge">Pegunungan & Budaya</span>
+                    <h3 class="blog-title">Kampung Atas Awan Wae Rebo</h3>
+                    <p class="blog-description">Desa tradisional Manggarai yang terisolasi indah di kelilingi pegunungan berkabut dengan arsitektur Mbaru Niang khas.</p>
+                    <div class="blog-footer">
+                        <button class="like-btn">❤️ <span class="like-count">198</span></button>
+                        <button class="share-btn" onclick="shareLink('Wae Rebo')">🔗 Bagikan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card" data-cat="pantai">
+                <div class="img-zoom-container">
+                    <img src="https://i.pinimg.com/736x/a2/68/27/a268275809c7a86c0c4ae1012f206716.jpg" alt="Pulau Rote" class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <span class="category-badge">Pantai & Laut</span>
+                    <h3 class="blog-title">Pantai Nemberala, Rote</h3>
+                    <p class="blog-description">Surga olahraga selancar air internasional di ujung terselatan NKRI dengan gulungan ombak panjang berkelas.</p>
+                    <div class="blog-footer">
+                        <button class="like-btn">❤️ <span class="like-count">143</span></button>
+                        <button class="share-btn" onclick="shareLink('Nemberala')">🔗 Bagikan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card" data-cat="budaya">
+                <div class="img-zoom-container">
+                    <img src="https://i.pinimg.com/1200x/81/be/c9/81bec9a7a1c4b117be8e00537f2877ba.jpg" alt="Bukit Tenau Sumba" class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <span class="category-badge">Pegunungan & Budaya</span>
+                    <h3 class="blog-title">Bukit Sabana Tenau, Sumba</h3>
+                    <p class="blog-description">Hamparan perbukitan hijau sejauh mata memandang yang berubah magis menjadi warna emas karamel eksotis saat kemarau.</p>
+                    <div class="blog-footer">
+                        <button class="like-btn">❤️ <span class="like-count">287</span></button>
+                        <button class="share-btn" onclick="shareLink('Bukit Tenau')">🔗 Bagikan</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="about-section" class="section dynamic-about-wrapper">
+        <div class="about-professional-container">
+            <div class="about-visual-side">
+                <div class="image-stack">
+                    <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=600&q=80" alt="Labuan Bajo" class="stack-img img-main">
+                    <img src="https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&w=500&q=80" alt="Kebudayaan NTT" class="stack-img img-sub">
+                </div>
+                <div class="experience-badge">
+                    <span class="badge-number">10+</span>
+                    <span class="badge-text">Tahun Jelajah Nusantara</span>
+                </div>
+            </div>
+
+            <div class="about-content-side">
+                <span class="about-subtitle">SIAPA KAMI</span>
+                <h2>Menyingkap Pesona Tersembunyi Nusa Tenggara Timur</h2>
+                <p class="about-lead-text">
+                    JelajahNTT adalah platform digital terdepan yang didedikasikan untuk mengenalkan kekayaan pariwisata, keunikan budaya, dan keindahan alam eksotis kepulauan NTT kepada dunia luar.
+                </p>
+                
+                <div class="about-features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">🌱</div>
+                        <div class="feature-info">
+                            <h3>Ekowisata Berkelanjutan</h3>
+                            <p>Kami mendukung penuh pariwisata yang menjaga kelestarian alam dan lingkungan hidup sekitar.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🤝</div>
+                        <div class="feature-info">
+                            <h3>Pemberdayaan Masyarakat</h3>
+                            <p>Berkolaborasi langsung dengan pemandu lokal dan perajin kain tenun untuk memajukan ekonomi daerah.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Destinasi Terjelajahi</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">15K+</span>
+                        <span class="stat-label">Wisatawan Terbantu</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Rating Ulasan Global</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="section contact-section-wrapper">
+        <div class="contact-professional-container">
+            <div class="contact-info-side">
+                <span class="contact-subtitle">HUBUNGI KAMI</span>
+                <h2>Mari Rencanakan Perjalanan Impian Anda</h2>
+                <p class="contact-lead-text">Tim spesialis penjelajah kami siap sedia membantu Anda menyusun rute perjalanan kustom terbaik melintasi gugusan kepulauan eksotis NTT.</p>
+                
+                <div class="contact-cards-stack">
+                    <div class="info-card-item">
+                        <div class="info-card-icon">📍</div>
+                        <div class="info-card-text">
+                            <h3>Kantor Operasional</h3>
+                            <p>Jl. Soekarno-Hatta, Labuan Bajo, NTT</p>
+                        </div>
+                    </div>
+                    <div class="info-card-item">
+                        <div class="info-card-icon">✉️</div>
+                        <div class="info-card-text">
+                            <h3>Email</h3>
+                            <p>halo@jelajahntt.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-side">
+                <form id="contactForm" class="premium-contact-form">
+                    <div class="premium-form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Nama Lengkap</label>
+                        <span class="input-bar"></span>
+                    </div>
+                    <div class="premium-form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Alamat Email</label>
+                        <span class="input-bar"></span>
+                    </div>
+                    <div class="premium-form-group">
+                        <textarea id="message" rows="3" required placeholder=" "></textarea>
+                        <label for="message">Pesan Anda</label>
+                        <span class="input-bar"></span>
+                    </div>
+                    <button type="submit" class="premium-submit-btn">
+                        <span>Kirim Pesan</span>
+                        <span class="btn-icon">🚀</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="toast" class="toast">Tautan sukses disalin!</div>
+    <button id="backToTop" title="Kembali ke atas">⬆️</button>
+
+    <footer>
+        <p>&copy; 2026 JelajahNTT Blog • Dioptimalkan dengan Sistem Scroll Halus.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
